@@ -36,7 +36,7 @@ angular.module("Lion.services",[])
   };
 })
 .service("NotifService",function($http){
-  var url = "http://rando-00.herokuapp.com/";
+  var url = "http://rando-00.herokuapp.com";
   return {
       like:function(id,cb){
         return $http({
