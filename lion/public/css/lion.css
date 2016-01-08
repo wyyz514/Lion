@@ -185,3 +185,17 @@ body
   color:#F50057;
   transition:color 0.5s ease-in-out;
 }
+
+@media (max-width:768px)
+{
+  .lion-pic-frame
+  {
+    width:20em;
+    height:14em;
+  }
+
+  .lion-pic-info
+  {
+    top:12em;
+  }
+}
