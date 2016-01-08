@@ -1,0 +1,14 @@
+<div class="lion-pic-frame">
+  <div class="lion-pic">
+    <img ng-src={{pic.link}}/>
+  </div>
+  <div class="lion-pic-info">
+    <div class="lion-pic-icon">
+      <span>{{pic.owner}}</span>
+    </div>
+    <div class="lion-pic-icon" id="likes">
+      <i ng-class="{'ion-ios-heart-outline':!liked,unliked:!liked,'ion-ios-heart':liked,liked:liked}" ng-click="like_toggle(pic)">
+      </i>&nbsp;<span style="font-size:1em;">{{pic.likes}}</span>
+    </div>
+  </div>
+</div>

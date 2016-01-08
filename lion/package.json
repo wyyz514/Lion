@@ -1,0 +1,16 @@
+{
+  "name": "randodb",
+  "version": "1.0.0",
+  "description": "fake app for liking pics and what not",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "mongoose": "^4.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wole Obayomi",
+  "license": "ISC"
+, "engines":{"node":"0.12.7"}}

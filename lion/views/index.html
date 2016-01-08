@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/controllers.js"></script>
+    <script src="/js/services.js"></script>
+    <script src="/js/directives.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato|Pathway+Gothic+One"/>
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/lion.css"/>
+  </head>
+  <body ng-app="Lion">
+    <div class="lion-nav">
+      <div class="lion-icon">
+        <img src="/img/lion.png"/>
+      </div>
+      <div class="lion-icon-text">Lion</div>
+    </div>
+    <div class="lion-full-text">
+      <div class="bar"></div>
+      Like it<br>
+      -or-<br>
+      not
+      <div class="bar reverse"></div>
+    </div>
+    <div ng-view></div>
+  </body>
+</html>
