@@ -1,4 +1,4 @@
 angular.module("Lion.controllers",[])
-.controller("AppCtrl",function($scope,pix,socket,NotifService){
+.controller("AppCtrl",function($scope,pix){
   $scope.pix = pix.data;
 });
