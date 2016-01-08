@@ -1,4 +1,4 @@
-var lion = angular.module("Lion",["ngRoute","Lion.controllers","Lion.services","Lion.directives"]);
+var lion = angular.module("Lion",["ngRoute","ngStorage","Lion.controllers","Lion.services","Lion.directives"]);
 //route configuration
 lion.config(function($routeProvider){
   $routeProvider.when("/app",{
