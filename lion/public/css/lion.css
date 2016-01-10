@@ -151,8 +151,57 @@ body
     height:2em;
     width:100%;
     top:16em;
+    left:0;
     background-color:#333;
     opacity:0.8;
+}
+
+.lion-spinner
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:665;
+    background-color:#f0f0f0;
+}
+
+.lion-spinner i
+{
+  font-size:1.5em;
+  -webkit-animation:spin 0.5s infinite
+}
+
+@-webkit-keyframes spin
+{
+    0%
+    {
+      -webkit-transform:rotate(0deg)
+    }
+
+    25%
+    {
+      -webkit-transform:rotate(90deg);
+    }
+
+    50%
+    {
+      -webkit-transform:rotate(180deg);
+    }
+
+    75%
+    {
+      -webkit-transform:rotate(270deg);
+    }
+
+    100%
+    {
+      -webkit-transform:rotate(360deg);
+    }
 }
 
 .lion-pic-icon
