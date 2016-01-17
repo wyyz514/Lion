@@ -9,7 +9,7 @@ angular.module("Lion.directives",[])
     link:function(scope,el,attrs){
 
     },
-    controller:function($scope,socket,NotifService,$localStorage){
+    controller:function($scope,socket,NotifService,$localStorage,$rootScope){
       $scope.store = $localStorage;
       $scope.store.likes = $localStorage.likes || [];
 
@@ -42,6 +42,7 @@ angular.module("Lion.directives",[])
             pic.likes = pic.likes + 1;
             socket.emit("like",{"pic":pic});
             $scope.save_like(pic._id);
+            $rootScope.updateNotification("You liked a photo");
           }
         }
         else {
@@ -51,6 +52,7 @@ angular.module("Lion.directives",[])
             pic.likes = pic.likes - 1;
             socket.emit("unlike",{"pic":pic});
             $scope.remove_like(pic._id);
+            $rootScope.updateNotification("You unliked a photo");
           }
         }
       }

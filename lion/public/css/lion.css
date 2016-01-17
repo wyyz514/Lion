@@ -34,7 +34,21 @@ body
     top:2em;
     left:0;
     height:2em;
+    z-index:55;
     width:100%;
+    background-color:#a66bbe;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:"Montserrat";
+    font-size:0.8em;
+    color:#fff;
+    transition:top 0.5s ease-in-out;
+}
+
+.bar-active
+{
+  top:5em;
 }
 
 .lion-icon>img

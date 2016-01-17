@@ -1,8 +1,4 @@
 angular.module("Lion.controllers",[])
-.controller("AppCtrl",function($scope,pix,$timeout){
-  $scope.loaded = false;
+.controller("AppCtrl",function($scope,pix){
   $scope.pix = pix.data;
-  $scope.$watch("pix",function(){
-    $scope.loaded = true;
-  });
 });
